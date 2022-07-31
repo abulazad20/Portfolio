@@ -1,0 +1,328 @@
+@charset "utf-8";
+
+
+/* 
+Purpose: Portfolio Webpage -CSS
+Date: 30 -July - 2022
+Author:Abul Kalam Azad
+Student ID:300351811
+Builded on Microsoft edge
+Tested on HTML and css code online validatior -https://validator.w3.org/nu/#textarea
+texted with Chrome */
+
+/* Common style rules - Mobile/Tablet/laptop 
+
+Starts with Mobile style rules and then the other media quires starts
+
+*/
+html{
+
+   background: whitesmoke;
+}
+
+body {
+   font-family: 'EB Garamond', serif;
+   max-width: 1040px;
+   min-width: 300px;
+   margin-left: auto;
+   margin-right: auto;
+    background: rgb(221, 218, 226);
+    font-weight: 600;
+ 
+}
+
+header {
+   background: rgb(221, 218, 226);
+   font-size: 15px;
+   padding: 1px;
+   
+}
+.header-para p{
+ 
+   font-size: 20px ;
+   
+}
+
+.header-content {
+    padding-left: 5%;
+  
+   
+}
+ul {
+   list-style-type: none;
+}
+
+.portfolio {
+   background-color: white;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   padding: 10px;
+}
+
+.PF {
+   width: 300px;
+}
+
+.PF-DIV {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+
+
+.PF-text {
+   font-size: 15px;
+   font-weight: 600;
+   text-align:justify;
+}
+
+.PF-image {
+   margin-top: 5px;
+   width: 200px;
+   border-radius: 5px;
+   height: 200px;
+}
+
+
+footer {
+   background: rgb(221, 218, 226);
+   text-align: center;
+   padding: 20px;
+}
+
+h4 {
+   margin-top: 2px;
+   margin-left: 0px;
+
+}
+
+ul {
+   padding-right: 50px;
+}
+.name-footer{
+   padding-right: 40%;
+}
+.h1{font-size: 30px;
+     padding-bottom: 30px;
+     font-family: 'Bebas Neue', cursive;
+     
+}
+.h1{
+   font-family: 'EB Garamond', serif;
+   font-weight: 900;
+}
+h2{
+   font-family: 'EB Garamond', serif;
+   font-weight: 900;
+   font-size: xx-large;
+}
+
+.header-photo img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 25%;
+  
+   
+   }
+   .header-photo {
+      margin-bottom: 6%;
+      margin-right: 5%;
+      
+   }
+   nav {
+      text-align: center;
+      clear: both
+   }
+
+   li {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      background-color: whitesmoke;
+      justify-content: flex-start;
+      color: rgb(1, 6, 12);
+      text-transform: uppercase;
+      text-align: center;
+      border-right: 10px solid rgb(221, 218, 226);
+      border-bottom: 2px solid rgb(221, 218, 226);
+      border-top: 2px solid rgb(221, 218, 226);
+      border-left: 20px solid rgb(221, 218, 226);
+      text-decoration: none;
+   }
+
+   a:hover, a:visited, a:link, a:active
+   {
+       text-decoration: none;
+       font-family: 'Bebas Neue', cursive;
+       font-size: 20px;
+       padding-top: 15px;
+   }
+   .footer2 li {
+      background: rgb(221, 218, 226);
+      font-size: 7px;
+    }
+    .name-footer {
+       font-size: 10px;
+       padding-top: 5px;
+    }
+   ul.footer {
+      padding-right: 50px;
+      display: none;
+      
+   }
+
+
+   .footer-nav {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+   }
+
+   .footer2 {
+      background: rgb(221, 218, 226);
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 10px;
+      justify-content: space-around;
+   }
+
+
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+  /*  */
+   li {
+     
+      background: rgb(221, 218, 226);
+      border: none;
+     }
+  
+  
+  
+   .header-photo img {
+      width: 150px;
+      padding-left: 20px;
+   }
+
+
+
+   .header-content {
+
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row-reverse;
+      
+
+   }
+
+   nav {
+      text-align: center;
+      clear: both;
+   }
+   .h1{
+      padding-bottom: 0px;
+      padding-right: 8%;
+ }
+
+   ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      
+     
+   }
+
+   li {
+      display: flex;
+      flex-direction: row;
+      padding-right: 8%;
+      justify-content: center;
+      color: rgb(1, 6, 12);
+      text-transform: uppercase;
+      text-align: center;
+   }
+   h4 {
+      font-size: 25px;
+      font-family: 'Bebas Neue', cursive;
+   }
+
+   .name-footer {
+      font-size: 20px;
+      font-family: 'Bebas Neue', cursive;
+   }
+
+   .PF-image {
+      width: 200px;
+   }
+
+   .footer2 {
+      display: none;
+   }
+
+   .footer-nav {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+   }
+ ul.footer {
+    
+   padding-top: 10px;
+   display:contents;
+  
+}
+
+
+  P.name-footer {
+     
+      padding-top: 0px;
+   }
+
+   .footer {
+   width: 5%;
+      display: flex;
+      flex-wrap: nowrap;
+      font-size: 8px;
+      justify-content:end;
+   }
+
+   ul.footer li {
+    
+      padding-top: 10px;
+      justify-content:end;
+      margin: 0%;
+      padding-right: 0%;
+     
+      }
+    
+}
+
+/* Laptop */
+
+@media only screen and (min-width: 1024px) {
+
+   nav {
+
+      display: flex;
+      justify-content: space-around;
+   }
+
+   ul {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+   }
+
+   .h1 {
+      padding-right: 45%;
+   }
+
+   .footer2 {
+      display: none;
+   }
+
+}
